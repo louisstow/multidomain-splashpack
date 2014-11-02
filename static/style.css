@@ -1,0 +1,71 @@
+/*csslint box-sizing: false, box-model: false; */
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow: hidden;
+}
+
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+html {
+	font-size: 100%;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+body {
+	font: 1rem/1.6rem sans-serif;
+	background-color: #f5f5f5;
+	color: #444;
+	display: -moz-box;
+	-moz-box-flex: 1;
+	-moz-box-orient: vertical;
+	-moz-box-align: stretch;
+	align-content: stretch;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+header {
+	-moz-box-flex: 38;
+	flex: 38 1 auto;
+	display: -moz-box;
+	-moz-box-align: center;
+	-moz-box-pack: center;
+	display: flex;
+	background: url('./logo.png') center no-repeat;
+	background-size: auto 3rem;
+	text-indent: -999rem;
+}
+
+main {
+	text-align: center;
+	background: url('./spinner.png') center no-repeat;;
+	background-size: 2rem;
+	-moz-box-flex: 62;
+	flex: 62 1 auto;
+	display: -moz-box;
+	-moz-box-align: center;
+	-moz-box-pack: center;
+	display: flex;
+}
+
+.flash-offline {
+	margin: auto;
+	padding: 3rem;
+}
+.flash-offline {
+	color: #888;
+	display: none;
+}
+.is-offline main {
+	background: none;
+}
+.is-offline .flash-offline {
+	display: inline;
+}

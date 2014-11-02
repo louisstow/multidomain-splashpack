@@ -1,0 +1,27 @@
+{
+	"name": "Multidomain Splashpack",
+	"launch_path": "/index.html",
+	"version": "1.0.0",
+	"description": "Description in English",
+	"icons": {
+		"128": "/static/icon-128.png",
+		"512": "/static/icon-512.png"
+	},
+	"developer": {
+		"name": "Studio Name",
+		"url": "http://studioname.com"
+	},
+	"default_locale": "en",
+	"locales": {
+		"de": {
+			"description": "Description in German"
+		},
+		"es": {
+			"description": "Description in Spanish"
+		}
+	},
+	"type": "privileged",
+	"permissions": {
+		"mobilenetwork": {"description": "Used to automatically forward to users locale"}
+	}
+}
